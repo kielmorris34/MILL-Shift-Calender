@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-align: center;
+    transition: all .3s;
+}
+
+#arrow {
+    color: white;
+    transition: all .3s;
+    display: inline-block;
+}
+
+#scalar {
+    transition: all .3s;
+}
+
+#scalar:hover {
+    transform: scale(1.5,1.5);
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+body {
+    color: white;
+    font-family: Montserrat;
+    background-color: #7C31B7;
+}
+
+table {
+    background-color: white;
+    color: #7C31B7;
+    font-weight: 200;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+/*
+tr, td {
+    border-left: 1px dashed lightgray;
+    padding: 5px;
+    border-bottom: none;
+    text-overflow: clip;
+}
+
+tr {
+    height: 1em;
+}
+
+td {
+    
+    overflow:hidden;
+    white-space:nowrap;
+    height: 15px;
+    color: white;
+    position: relative;
+}
+
+th {
+    transform: translateY(-50%);
+    border-bottom: none;
+
+}
+
+tr:first-child {
+    transform: translateY(50%);
+    margin-bottom: 200px;
+}
+*/
+
+.half-hour {
+    border-top: none;
+    border-bottom: 1px dashed lightgray;
+} 
+
+.white-text {
+    color: white;
+}
+
+td {
+    width: 14%;
+}
+
+#days th:not(:first-child) {
+    border-bottom: 2px solid #7C31B7;
+}
+
+.shift {
+    /*overflow-x: hidden;*/
+    color: black;
+    background-color: #e8e3d3;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: none;
+}
+
+.s-start {
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.s-end {
+    border-radius: 0px 0px 8px 8px;
+    margin-top: 0px;
+}
+
+.sub-info {
+    font-size: 10pt;
+}
+
+/*********************************************/
+
+h1 {
+    margin-left: 2.5%;
+}
+
+#flex-calender {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+    color: #7C31B7;
+    border-collapse: collapse;
+    align-items: stretch;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-basis: 1;
+    width: 12.5%;
+    border-left: 1px dashed gray;
+}
+
+.cell {
+    color: #7C31B7;
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.flex-shift {
+    color: black;
+    background-color: #e8e3d3;
+    border: 2px solid #ccc7b9;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+    
+    flex-basis: 1;
+    margin-left: 0px;
+    margin-top: 8px;
+    border-radius: 8px;
+    margin: 0;
+    
+    transition: width .6s, z-index 8s;
+}
+
+.flex-shift > p {
+    padding-left: 6px;
+}
+
+.days {
+    font-weight: bold;
+}
+
+#time {
+    border: none;
+}
+
+#time > div {
+    color: #7C31B7;
+    border-bottom: 1px solid white;
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+
+.col > .cell {
+    color: #7C31B7;
+}
+
+.closed {
+    background-color: #ddd;
+}
+
+.Kiel-Morris {
+    background-color: #E0B116;
+}
+
+.Kyle-Luiten {
+    background-color: #CCA114;
+}
+
+.Livia-Anderson {
+    background-color: #D0A929;
+}
+
+.Nick-Armstrong {
+    background-color: #C9B162;
+}
+
+.dummy {
+    background-color: white;
+    z-index: 0;
+    border: none;                     /* CORRECT VERSION!! */
+    color: white;
+}
+
+.expand {
+    width: 1000%;
+    z-index: 3;
+    transition: width .6s, z-index 0s;
+}
+
+.name {
+    color: #7C31B7;
+    font-style: italic;
+    font-weight: bolder;
+}
+    
+
+/***********************************/
+
+#machines {
+    font-size: 11pt;
+    width: 95%;
+}
+
+th {
+    width: 15%;
+    font-weight: normal;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    color: black;
+}
+
+td {
+    border: 1px dotted gray;
+}
+
+table tr:first-child th {
+    color: #7C31B7;
+    font-weight: bold;
+}
+
+.check {
+    background-color: #00ed7e;
+    color: black;
+    text-align: center;
+}
+
+/************* Workshop *********************/
+
+#workshops {
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 250px;
+    overflow-y: scroll;
+    margin: auto;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    /* make this not flex and scrolled */
+}
+
+#workshops > div {
+    height: 60px;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+.ws-date {
+    width: 15%;
+    text-align: center;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.ws-date > h2, .ws-date > p {
+    font-weight: bold;
+    margin: auto;
+}
+
+.ws-name {
+    margin-left: 15px;
+}
+
+.ws-time {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #7C31B7;
+}

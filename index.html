@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MILL Tech Schedules</title>
+        <link rel="stylesheet" href="calender.css" type="text/css" />
+        <script type="text/javascript" src="calender.1.js"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    </head>
+    <body>
+        <h1 id="title">This Week at the Mill</h1>
+        <div id="flex-calender">
+            <!-- JS fills in -->
+        </div>
+        <h1>Upcoming Workshops</h1>
+        <div id="workshops">
+            <!-- ex.
+            <div>
+                <div class="ws-date"><h2>23</h2><p>Nov</p></div>
+                <div class="ws-name">Laser Engraving Workshop</div>
+            </div>
+            -->
+        </div>
+        <h1>Who can help me with this machine? <a href="#bottom" id="scroller"><span id="scalar"><span id="arrow" class="fas fa-chevron-circle-down"></span></span></h1></a>
+        <table id="machines">
+            <tr>
+                <th>Category</th>
+                <th>Machine</th>
+                <th>Kyle Luiten</th>
+                <th>Kiel Morris</th>
+                <th>Livia Anderson</th>
+                <th>Nick Anderson</th>
+            </tr>
+            <tr>
+                <th rowspan=4>Special</th>
+                <th>Waterjet</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Laser Cutter</th>
+                <td class="check"> <span class="fas fa-check-square"></span></td>
+                <td class="check"> <span class="fas fa-check-square"></span></td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>UV Printer</th>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Vinyl Printer</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th rowspan=4>CNC Mills</th>
+                <th>Othermill</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Pocket NC 5-Axis</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Carvey</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Tormach</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th rowspan=5>3D Printers</th>
+                <th>Stratasys</th>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Form 2 Resin Printer</th>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Raise 3D</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Dremel</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Potter Bot</th>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th rowspan=5>Heat / Electronic</th>
+                <th>Kiln</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Stripheaters</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Heat Press</th>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Soldering Iron</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Bench Power Supply</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th rowspan=5>Machine / Power Tools</th>
+                <th>Grizzly Mini Metal Lathe</th>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Grizzly Manual Mill</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Belt & Disc Sander</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Horizontal Metal Band Saw</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Power Tools</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th rowspan=3>Sewing / Fabric Working</th>
+                <th>Sewing Serger</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>Standard Sewing Machine</th>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+            </tr>
+            <tr>
+                <th>Embroidery Machine</th>
+                <td> </td>
+                <td class="check"> <span class="fas fa-check-square"></span></td>
+                <td class="check"><span class="fas fa-check-square"></span> </td>
+                <td> </td>
+            </tr>
+        </table>
+        <p id="bottom"> </p>
+    </body>
+</html>
